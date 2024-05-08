@@ -6,7 +6,7 @@ import {toast, Toaster} from "sonner";
 export default function AddToCartButton({book}) {
 
     const axiosInstance = axios.create({
-        baseURL: "http://localhost:8082/api/v1/shopping-cart",
+        baseURL: "https://render-back-qoes.onrender.com/api/v1/shopping-cart",
         headers: {
             'Authorization': `Bearer ${localStorage.getItem("token")}`
         }

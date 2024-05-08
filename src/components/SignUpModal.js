@@ -48,7 +48,7 @@ export default function SignUpModal() {
     }
 
         const onClickEvent = () => {
-            axios.post("http://localhost:8082/api/v1/registration", userDetails)
+            axios.post("https://render-back-qoes.onrender.com/api/v1/registration", userDetails)
                 .then(response => console.log(response.data))
                 .catch(error => console.error(error));
         }

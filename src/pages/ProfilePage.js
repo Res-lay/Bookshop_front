@@ -21,7 +21,7 @@ export default function ProfilePage() {
 
 
     const axiosInstance = axios.create({
-        baseURL: "http://localhost:8082/api/v1/purchases",
+        baseURL: "https://render-back-qoes.onrender.com/api/v1/purchases",
         headers: {
             'Authorization': `Bearer ${token}`
         }
