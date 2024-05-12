@@ -22,7 +22,7 @@ export default function AddNewBookButton({update}){
         quantity: ''});
 
     const CreateBook = () => {
-        axios.post(`https://render-back-qoes.onrender.com/api/v1/books/add`, formData)
+        axios.post(`http://localhost:8082/api/v1/books/add`, formData)
             .then(response => update(formData))
             .catch(error => console.error(error));
     }
