@@ -10,7 +10,7 @@ export default function AboutBook() {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        axios.get(`http://localhost:8082/api/v1/books/${param.id}`)
+        axios.get(`https://render-back-qoes.onrender.com/api/v1/books/${param.id}`)
             .then(response => {
                 setItem(response.data);
                 console.log(response.data);

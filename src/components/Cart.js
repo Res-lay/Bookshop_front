@@ -22,7 +22,7 @@ export default function Cart() {
     const token = localStorage.getItem("token");
 
     const axiosInstance = axios.create({
-        baseURL: "http://localhost:8082/api/v1/",
+        baseURL: "https://render-back-qoes.onrender.com/api/v1/",
         headers: {
             'Authorization': `Bearer ${token}`
         }

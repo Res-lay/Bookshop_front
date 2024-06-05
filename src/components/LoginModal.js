@@ -22,7 +22,7 @@ export default function LoginModal({onLogin}) {
     const [invalid, setInvalid] = useState(false);
 
     const buttonClicked = async () => {
-        axios.post("http://localhost:8082/api/v1/login", user)
+        axios.post("https://render-back-qoes.onrender.com/api/v1/login", user)
             .then(response => {
                 onLogin(response.data.token);
                 localStorage.setItem("user", JSON.stringify(response.data.user));

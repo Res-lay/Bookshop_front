@@ -9,7 +9,7 @@ export default function CardsGrid({type, filter}) {
     const [booksData, setBooksData] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:8082/api/v1/books/get-${type}`)
+        axios.get(`https://render-back-qoes.onrender.com/api/v1/books/get-${type}`)
             .then(response => setBooksData(response.data))
             .catch(error => console.error(error));
     })

@@ -23,7 +23,7 @@ export default function BooksTable() {
 
 
     const axiosInstance = axios.create({
-        baseURL: "http://localhost:8082/api/v1/books",
+        baseURL: "https://render-back-qoes.onrender.com/api/v1/books",
         headers: {
             'Authorization': `Bearer ${localStorage.getItem("token")}`
         }
